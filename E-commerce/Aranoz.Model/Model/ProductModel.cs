@@ -17,7 +17,7 @@ namespace Aranoz.Model
         [Required(ErrorMessage = "Category Required")]
         public int CategoryId { get; set; }
         [Required(ErrorMessage = "Price Required")]
-        public double ProductPrice { get; set; }
+        public int ProductPrice { get; set; }
         public string ProductImage { get; set; }
         [Required(ErrorMessage = "Product Details is Required")]
         public string ProductDetails { get; set; }

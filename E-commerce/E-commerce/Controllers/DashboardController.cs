@@ -10,20 +10,10 @@ namespace E_commerce.Controllers
     //[Authorize]
     public class DashboardController : Controller
     {
+        //[Authorize]
         // GET: Dashboard
-        public ActionResult AddRole()
+        public ActionResult AdminDashboard()
         {
-            return View();
-        }
-        [HttpPost]
-        public ActionResult AddRole(string rolename)
-        {
-            var id = RoleManager.AddNewPRole(rolename);
-            if (id>0)
-            {
-                return View();
-            }
-
             return View();
         }
     }

@@ -25,14 +25,17 @@ namespace E_commerce.Controllers
         {
             if (product.ProdutID > 0)
             {
+                string imagesave;
                 ProductManager.UpdateProduct(product);
                 AdminViewModel products = new AdminViewModel();
+                imagesave = Uploadimage(file);
+                product.ProductImage = imagesave;
                 products.ProductList = ProductManager.CheckProductDetails();
                 return View("GetAllProduct", products);
             }
             else
             { 
-                if (ModelState.IsValid && file.ContentLength>0)
+                if (ModelState.IsValid)
                 { 
                     string imagesave;
                     imagesave = Uploadimage(file);
@@ -46,7 +49,9 @@ namespace E_commerce.Controllers
                     }
                 }
             }
-            return View();
+            AdminViewModel productlist = new AdminViewModel();
+            productlist.CategoryList = CategoryManager.GetAllCategory();
+            return View(productlist);
         }
         public ActionResult GetSingleProduct(int id)
         {

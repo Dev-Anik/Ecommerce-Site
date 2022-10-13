@@ -59,7 +59,7 @@ namespace DataLayerSQL
                         product.ProductName = (string)list["ProductName"];
                         product.ProductImage = (string)list["ProductImage"];
                         product.ProductDetails = (string)list["ProductDetails"];
-                        product.ProductPrice = (double)list["ProductPrice"];
+                        product.ProductPrice = (int)list["ProductPrice"];
                         product.CategoryName = (string)list["CategoryName"];
                         Products.Add(product);
                     }
@@ -152,7 +152,7 @@ namespace DataLayerSQL
                         product.ProductName = (string)list["ProductName"];
                         product.ProductImage = (string)list["ProductImage"];
                         product.ProductDetails = (string)list["ProductDetails"];
-                        product.ProductPrice = (double)list["ProductPrice"];
+                        product.ProductPrice = (int)list["ProductPrice"];
                         product.CategoryId = (int)list["CategoryId"];
                     }
                  

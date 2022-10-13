@@ -1,51 +1,97 @@
 ﻿@model Aranoz.Model.Model.AdminViewModel
 @{
     ViewBag.Title = "AddProduct";
+    Layout = "~/Views/Shared/_DashBoardLayout.cshtml";
 }
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-validation">
+                        @using (Html.BeginForm("AddProduct", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+                            @Html.HiddenFor(model => model.Product.ProdutID)
+                            @Html.HiddenFor(model => model.Product.ProductImage)
+                            <h1> Give All The Information Carefully</h1>
+                            <div class="form-group row">
+                                <label class="col-lg-4 col-form-label" for="val-username">
+                                    Product Name <span class="text-danger">*</span>
+                                </label>
+                                <div class="col-lg-6">
+                                    @Html.EditorFor(model => model.Product.ProductName, new { @class= "form-control inputfield", @id = "val-username", @placeholder = "Product Name", type = "text" })
+                                    @Html.ValidationMessageFor(model => model.Product.ProductName,"", new { @class = "text-danger" })
+                                </div>
+                              
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-4 col-form-label" for="val-username">
+                                    Product Price <span class="text-danger">*</span>
+                                </label>
+                                <div class="col-lg-6">
+                                    @Html.EditorFor(model => model.Product.ProductPrice, new { @class ="form-control inputfield", @id="val-username", @placeholder = "Product price", type = "number" })
+                                    @Html.ValidationMessageFor(model => model.Product.ProductPrice,"", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-4 col-form-label" for="val-username">
+                                    Product Details <span class="text-danger">*</span>
+                                </label>
+                                <div class="col-lg-6">
+                                    @Html.TextAreaFor(model => model.Product.ProductDetails, new {@class="form-control", @id="val-suggestions",@rows="5",@placeholder="Product Details",type = "text", })
+                                    @Html.ValidationMessageFor(model => model.Product.ProductDetails,"", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-4 col-form-label" for="val-username">
+                                    Category <span class="text-danger">*</span>
+                                </label>
+                                <div class="col-lg-6">
+                                    @Html.DropDownListFor(model => model.Product.CategoryId, new SelectList(Model.CategoryList, "CategoryId", "CategorName"),new { @class="form-control",@id="val-skill" })
+                                    @Html.ValidationMessageFor(model => model.Product.CategoryId)
+                                </div>
+                              
+                            </div>
+                            <div class="new-contact__header">
+                                @if (Model.Product != null && Model.Product.ProductImage != null)
+                                {
+                                    <img src="@Model.Product.ProductImage" class="new-contact__img" alt="" width="100" height="100">
+                                }
+                                <input type="file" name="file" id="files" class="zmdi zmdi-camera new-contact__upload" />
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    @if (Model.Product != null && Model.Product.ProdutID > 0)
+                                    {
+                                        <div class="form-group row">
+                                            <div class="col-lg-8 ml-auto">
+                                                <input type="submit" class="btn btn-primary" value="Update" class="btn btn-light" />
+                                            </div>
+                                        </div>
 
-@using (Html.BeginForm("AddProduct", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
-{
-    @Html.HiddenFor(model => model.Product.ProdutID)
-    @Html.HiddenFor(model => model.Product.ProductImage)
-    <h1> Give All The Information Carefully</h1>
-    <div>
-        <label> Product Name</label>
-        @Html.EditorFor(model => model.Product.ProductName, new { type = "text", })
-        @Html.ValidationMessageFor(model => model.Product.ProductName)
-    </div>
-    <div>
-        <label> Product Price</label>
-        @Html.EditorFor(model => model.Product.ProductPrice, new { type = "text", })
-        @Html.ValidationMessageFor(model => model.Product.ProductPrice)
-    </div>
-    <div>
-        <label> Product Details</label>
-        @Html.TextAreaFor(model => model.Product.ProductDetails, new { type = "text", })
-        @Html.ValidationMessageFor(model => model.Product.ProductDetails)
-    </div>
-    <div>
-        <label> Category </label>
-        @Html.DropDownListFor(model => model.Product.CategoryId, new SelectList(Model.CategoryList, "CategoryId", "CategorName"))
-        @Html.ValidationMessageFor(model => model.Product.CategoryId)
-    </div>
-    <div class="new-contact__header">
-        @if (Model.Product.ProductImage != null)
-        {
-            <img src="@Model.Product.ProductImage" class="new-contact__img" alt="">
-        }
-        <input type="file" name="file" id="files" class="zmdi zmdi-camera new-contact__upload" />
-    </div>
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            @if (Model.Product == null)
-            {
-                <input type="submit" value="Create" class="btn btn-light" />
-            }
-            else
-            {
-                <input type="submit" value="Update" class="btn btn-light" />
-            }
+                                    }
+                                    else
+                                    {
+                                        <div class="form-group row">
+                                            <div class="col-lg-8 ml-auto">
+                                                <input type="submit" class="btn btn-primary" value="Add" class="btn btn-light" />
+                                            </div>
+                                        </div>
+                                    }
 
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-}
+</div>
+<style>
+    .inputfield {
+        width: 100px;
+        height: 100px;
+
+    }
+</style>
