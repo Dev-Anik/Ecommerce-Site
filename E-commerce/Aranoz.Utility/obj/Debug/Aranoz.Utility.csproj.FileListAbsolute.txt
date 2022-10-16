@@ -14,3 +14,9 @@ G:\bh-ecommerce\ByteHeart E-commerce Website\Aranoz\E-commerce\Aranoz.Utility\ob
 G:\bh-ecommerce\ByteHeart E-commerce Website\Aranoz\E-commerce\Aranoz.Utility\obj\Debug\Aranoz.Utility.dll
 G:\bh-ecommerce\ByteHeart E-commerce Website\Aranoz\E-commerce\Aranoz.Utility\obj\Debug\Aranoz.Utility.pdb
 G:\bh-ecommerce\ByteHeart E-commerce Website\Aranoz\E-commerce\Aranoz.Utility\obj\Debug\Aranoz.Utility.csproj.AssemblyReference.cache
+E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\Aranoz.Utility\bin\Debug\Aranoz.Utility.dll
+E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\Aranoz.Utility\bin\Debug\Aranoz.Utility.pdb
+E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\Aranoz.Utility\obj\Debug\Aranoz.Utility.csproj.CoreCompileInputs.cache
+E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\Aranoz.Utility\obj\Debug\Aranoz.Utility.dll
+E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\Aranoz.Utility\obj\Debug\Aranoz.Utility.pdb
+E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\Aranoz.Utility\obj\Debug\Aranoz.Utility.csproj.AssemblyReference.cache

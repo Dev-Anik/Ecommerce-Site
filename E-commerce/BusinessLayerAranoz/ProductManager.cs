@@ -42,5 +42,11 @@ namespace BusinessLayerAranoz
             var productid = provider.GetSingleProduct(id);
             return productid;
         }
+        public static List<ProductModel> SeachByCategoryProduct(int id)
+        {
+            ProductSQLProvider provider = new ProductSQLProvider();
+            var productid = provider.SearchByCategoryDetails(id);
+            return productid;
+        }
     }
 }

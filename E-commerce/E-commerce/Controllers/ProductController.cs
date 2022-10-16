@@ -7,6 +7,9 @@ using System.Web.Mvc;
 using Aranoz.Model.Model;
 using BusinessLayerAranoz;
 using Aranoz.Model;
+using System.Text;
+using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace E_commerce.Controllers
 {
@@ -80,6 +83,14 @@ namespace E_commerce.Controllers
             savepath = "/Image/" + image;
             productimage.SaveAs(imageurl);
             return savepath;
+        }
+        public ActionResult SearchProduct(int id)
+        {
+            AdminViewModel product = new AdminViewModel();
+            product.ProductSearchList = ProductManager.SeachByCategoryProduct(id);
+            product.CategoryList = CategoryManager.GetAllCategory();
+            return View("GetAllProduct", product);
+
         }
     }
 }
