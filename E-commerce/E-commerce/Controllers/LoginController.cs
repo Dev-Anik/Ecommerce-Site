@@ -61,9 +61,9 @@ namespace E_commerce.Controllers
             if (ModelState.IsValid)
             {
                 var member = new AuthenticanProvider();
-                if (member.AddNewMembershipUser(customer.Membership))
+                if (customer.Membership.password != customer.Membership.Confirmpassword)
                 {
-                    if (customer.Membership.password != customer.Membership.Confirmpassword)
+                    if (member.AddNewMembershipUser(customer.Membership))
                     {
                         Roles.AddUserToRole(customer.Membership.UserName, "Customer");
                         var userkey = Membership.GetUser(customer.Membership.UserName).ProviderUserKey;
@@ -77,7 +77,7 @@ namespace E_commerce.Controllers
                     {
                         AdminViewModel username = new AdminViewModel();
                         username.customer = customer;
-                        ViewData["Password"] = "Password is not Matched !!!";
+                        ViewData["UserName"] = "User Name Already Existed !!";
                         return View(username);
                     }
 
@@ -86,7 +86,7 @@ namespace E_commerce.Controllers
                 {
                     AdminViewModel username = new AdminViewModel();
                     username.customer = customer;
-                    ViewData["UserName"] = "User Name Already Existed !!";
+                    ViewData["Password"] = "Password is not Matched !!!";
                     return View(username);
                 }
             }

@@ -31,7 +31,6 @@ E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\Arano
 E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\Aranoz.Model\bin\Debug\Aranoz.Model.dll
 E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\Aranoz.Model\bin\Debug\Aranoz.Model.pdb
 E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\Aranoz.Model\bin\Debug\System.ComponentModel.Annotations.dll
-E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\Aranoz.Model\obj\Debug\Aranoz.Model.csproj.AssemblyReference.cache
 E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\Aranoz.Model\obj\Debug\Aranoz.Model.csproj.CoreCompileInputs.cache
 E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\Aranoz.Model\obj\Debug\Aranoz.Model.csproj.CopyComplete
 E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\Aranoz.Model\obj\Debug\Aranoz.Model.dll

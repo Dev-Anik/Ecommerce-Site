@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Aranoz.Model.Model;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+
 namespace Aranoz.Model.Model
 {
     public class AdminViewModel

@@ -43,16 +43,20 @@
                     </a>
                     <ul aria-expanded="false">
                         <li>
-                            <a href="./index.html">CATEGORY</a>
+                            @Html.ActionLink("CATEGORY", "AddCategory", "Category")
                         </li>
                         <!-- <li><a href="./index-2.html">Home 2</a></li> -->
                     </ul>
                     <ul aria-expanded="false">
-                        <li><a href="./index.html">ADD PRODUCT</a></li>
+                        <li>
+                            @Html.ActionLink("ADD PRODUCT", "AddProduct", "Product")
+                        </li>
                         <!-- <li><a href="./index-2.html">Home 2</a></li> -->
                     </ul>
                     <ul aria-expanded="false">
-                        <li><a href="./index.html">PRODUCT LIST</a></li>
+                        <li>
+                            @Html.ActionLink("PRODUCT LIST", "GetAllProduct", "Product")
+                        </li>
                         <!-- <li><a href="./index-2.html">Home 2</a></li> -->
                     </ul>
                 </li>

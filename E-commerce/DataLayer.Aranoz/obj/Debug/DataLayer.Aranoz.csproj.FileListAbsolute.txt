@@ -31,3 +31,12 @@ E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\DataL
 E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\DataLayer.Aranoz\obj\Debug\DataLayer.Aranoz.csproj.CoreCompileInputs.cache
 E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayer.Aranoz\obj\Debug\DataLayer.Aranoz.csproj.AssemblyReference.cache
 E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayer.Aranoz\obj\Debug\DataLayer.Aranoz.csproj.CoreCompileInputs.cache
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayer.Aranoz\bin\Debug\DataLayer.Aranoz.dll
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayer.Aranoz\bin\Debug\DataLayer.Aranoz.pdb
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayer.Aranoz\bin\Debug\Aranoz.Model.dll
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayer.Aranoz\bin\Debug\Aranoz.Utility.dll
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayer.Aranoz\bin\Debug\Aranoz.Model.pdb
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayer.Aranoz\bin\Debug\Aranoz.Utility.pdb
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayer.Aranoz\obj\Debug\DataLayer.Aranoz.csproj.CopyComplete
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayer.Aranoz\obj\Debug\DataLayer.Aranoz.dll
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayer.Aranoz\obj\Debug\DataLayer.Aranoz.pdb

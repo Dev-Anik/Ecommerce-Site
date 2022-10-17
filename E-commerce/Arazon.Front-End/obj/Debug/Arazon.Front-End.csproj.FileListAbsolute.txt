@@ -351,7 +351,6 @@ E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\Arazo
 E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\Arazon.Front-End\bin\System.Web.Helpers.xml
 E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\Arazon.Front-End\bin\System.Web.Mvc.xml
 E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\Arazon.Front-End\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\Arazon.Front-End\obj\Debug\Arazon.Front-End.csproj.AssemblyReference.cache
 E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\Arazon.Front-End\obj\Debug\Arazon.Front-End.csproj.CoreCompileInputs.cache
 E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\Arazon.Front-End\obj\Debug\Arazon.Front-End.csproj.CopyComplete
 E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\Arazon.Front-End\obj\Debug\Arazon.Front-End.dll

@@ -36,7 +36,7 @@ namespace DataLayer.Aranoz
                         ProdutID=Convert.ToInt32(dr["ProductID"]),
                         ProductName=dr["ProductName"].ToString(),
                         ProductDetails = dr["ProductDetails"].ToString(),
-                        ProductPrice=Convert.ToDouble(dr["ProductPrice"]),
+                        ProductPrice=Convert.ToInt32(dr["ProductPrice"]),
                         ProductImage= dr["ProductImage"].ToString(),
 
                     });

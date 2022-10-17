@@ -159,11 +159,11 @@
                                         <div>
                                             @if (Model != null && ViewData["UserName"] != null)
                                             {
-                                                @Html.ValidationMessageFor(model => model.customer.Membership.password, ViewData["UserName"].ToString(), new { @class = "text-danger" })
+                                                @Html.ValidationMessageFor(model => model.customer.Membership.UserName, ViewData["UserName"].ToString(), new { @class = "text-danger" })
                                             }
                                             else
                                             {
-                                                @Html.ValidationMessageFor(model => model.customer.Membership.password, "", new { @class = "text-danger" })
+                                                @Html.ValidationMessageFor(model => model.customer.Membership.UserName, "", new { @class = "text-danger" })
                                             }
                                         </div>
                                     </div>

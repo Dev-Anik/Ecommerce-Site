@@ -1,17 +1,12 @@
 ﻿using System;
+using System.Web;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.EnterpriseServices;
-using System.Linq;
-using System.Security.Claims;
-using System.Web;
-using System.Web.Configuration;
 using System.Web.Security;
 using Aranoz.Model;
 using Aranoz.Model.Model;
 using Aranoz.Utility;
-using WebMatrix.WebData;
 
 
 namespace E_commerce.AuthControl
@@ -63,25 +58,6 @@ namespace E_commerce.AuthControl
             return added;
         }
 
-        //public bool UpdateMembershipUser(MembershipModel membershipmodel)
-        //{
-        //    bool updated = true;
-        //    try
-        //    {
-        //        if (membershipmodel != null)
-        //        {
-        //            MembershipUser memberuser =(MembershipUser)membershipmodel.userprofile.Email;
-        //             Membership.UpdateUser(memberuser);
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception("Message" + ex);
-        //        added = false;
-        //        return added;
-        //    }
-        //    return added;
-        //}
         public List<RoleModel> GetAllRoleList()
         {
             var roleitem = Roles.GetAllRoles();

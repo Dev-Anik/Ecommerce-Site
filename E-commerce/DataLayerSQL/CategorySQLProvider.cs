@@ -25,7 +25,6 @@ namespace DataLayerSQL
                 {
                     connection.Open();
                     id = command.ExecuteNonQuery();
-                    return id;
                 }
                 catch (Exception ex)
                 {
@@ -44,7 +43,6 @@ namespace DataLayerSQL
         {
             using (SqlConnection connection = new SqlConnection(ConnectionStringProvider.Connection))
             {
-                bool updated = true;
                 SqlCommand command = new SqlCommand("Select * from Category", connection);
                 command.CommandType = CommandType.Text;
                 try
@@ -64,7 +62,6 @@ namespace DataLayerSQL
                 }
                 catch (Exception ex)
                 {
-                    updated = false;
                     throw new Exception("Exception Adding Data. " + ex.Message);
                 }
                 finally
@@ -103,7 +100,6 @@ namespace DataLayerSQL
         {
             using (SqlConnection connection = new SqlConnection(ConnectionStringProvider.Connection))
             {
-                bool updated = true;
                 SqlCommand command = new SqlCommand("Select * from Category where CategoryId=@CategoryId", connection);
                 command.CommandType = CommandType.Text;
                 command.Parameters.AddWithValue("@CategoryId", id);
@@ -121,7 +117,6 @@ namespace DataLayerSQL
                 }
                 catch (Exception ex)
                 {
-                    updated = false;
                     throw new Exception("Exception Adding Data. " + ex.Message);
                 }
                 finally
