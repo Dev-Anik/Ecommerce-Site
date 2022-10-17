@@ -29,3 +29,5 @@ G:\bh-ecommerce\ByteHeart E-commerce Website\Aranoz\E-commerce\DataLayer.Aranoz\
 G:\bh-ecommerce\ByteHeart E-commerce Website\Aranoz\E-commerce\DataLayer.Aranoz\bin\Debug\Aranoz.Utility.pdb
 E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\DataLayer.Aranoz\obj\Debug\DataLayer.Aranoz.csproj.AssemblyReference.cache
 E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\DataLayer.Aranoz\obj\Debug\DataLayer.Aranoz.csproj.CoreCompileInputs.cache
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayer.Aranoz\obj\Debug\DataLayer.Aranoz.csproj.AssemblyReference.cache
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayer.Aranoz\obj\Debug\DataLayer.Aranoz.csproj.CoreCompileInputs.cache

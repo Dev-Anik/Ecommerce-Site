@@ -40,17 +40,11 @@ namespace E_commerce.AuthControl
         public bool AddNewMembershipUser(MembershipModel membershipmodel)
         {
             bool added = true;
-            //bool check = true;
-            var checkdata = "";
-            if (membershipmodel.UserName != null)
-            {
-                checkdata = Membership.FindUsersByName(membershipmodel.UserName).ToString();
-                //check = false;
-            }
+            var check = Roles.IsUserInRole(membershipmodel.UserName, "Customer");
             try
             {
 
-                if (membershipmodel != null && checkdata==null)
+                if (membershipmodel != null && check == false)
                 {
                     var membershipitem = Membership.CreateUser(membershipmodel.UserName, membershipmodel.password,
                         membershipmodel.Email);

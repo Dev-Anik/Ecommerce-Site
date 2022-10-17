@@ -50,3 +50,16 @@ E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\DataL
 E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\DataLayerSQL\obj\Debug\DataLayerSQL.csproj.CopyComplete
 E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\DataLayerSQL\obj\Debug\DataLayerSQL.dll
 E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\DataLayerSQL\obj\Debug\DataLayerSQL.pdb
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayerSQL\bin\Debug\DataLayerSQL.dll
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayerSQL\bin\Debug\DataLayerSQL.pdb
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayerSQL\bin\Debug\Aranoz.Model.dll
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayerSQL\bin\Debug\Aranoz.Utility.dll
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayerSQL\bin\Debug\DataLayer.Aranoz.dll
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayerSQL\bin\Debug\Aranoz.Model.pdb
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayerSQL\bin\Debug\Aranoz.Utility.pdb
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayerSQL\bin\Debug\DataLayer.Aranoz.pdb
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayerSQL\obj\Debug\DataLayerSQL.csproj.AssemblyReference.cache
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayerSQL\obj\Debug\DataLayerSQL.csproj.CoreCompileInputs.cache
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayerSQL\obj\Debug\DataLayerSQL.csproj.CopyComplete
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayerSQL\obj\Debug\DataLayerSQL.dll
+E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\DataLayerSQL\obj\Debug\DataLayerSQL.pdb
