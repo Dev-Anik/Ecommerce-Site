@@ -54,5 +54,3 @@ E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\Busin
 E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\BusinessLayerAranoz\obj\Debug\BusinessLayerAranoz.csproj.CopyComplete
 E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\BusinessLayerAranoz\obj\Debug\BusinessLayerAranoz.dll
 E:\EcommerceWebsite\SampleWebsite\New folder (4)\Ecommerce-Site\E-commerce\BusinessLayerAranoz\obj\Debug\BusinessLayerAranoz.pdb
-E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\BusinessLayerAranoz\obj\Debug\BusinessLayerAranoz.csproj.AssemblyReference.cache
-E:\EcommerceWebsite\SampleWebsite\New folder (5)\Ecommerce-Site\E-commerce\BusinessLayerAranoz\obj\Debug\BusinessLayerAranoz.csproj.CoreCompileInputs.cache

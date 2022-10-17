@@ -140,67 +140,67 @@
                             {
                                 <div class="col-md-12 val-Data">
                                     <label for="validationCustom01" class="form-label">Full Name</label>
-                                    @Html.TextBoxFor(model => model.customer.FullName, new { @class = "form-control", type = "text" })
+                                    @Html.TextBoxFor(model => model.Customer.FullName, new { @class = "form-control", type = "text" })
                                     <div>
-                                        @Html.ValidationMessageFor(model => model.customer.FullName, "", new { @class = "text-danger" })
+                                        @Html.ValidationMessageFor(model => model.Customer.FullName, "", new { @class = "text-danger" })
                                     </div>
                                 </div>
                                 <div class="col-md-12 val-Data">
                                     <label for="validationCustom02" class="form-label">Email</label>
-                                    @Html.TextBoxFor(model => model.customer.Email, new { @class = "form-control", type = "Email" })
+                                    @Html.TextBoxFor(model => model.Customer.Email, new { @class = "form-control", type = "Email" })
                                     <div>
-                                        @Html.ValidationMessageFor(model => model.customer.Email, "", new { @class = "text-danger" })
+                                        @Html.ValidationMessageFor(model => model.Customer.Email, "", new { @class = "text-danger" })
                                     </div>
                                 </div>
                                 <div class="col-md-12 val-Data">
                                     <label for="validationCustomUsername" class="form-label">Username</label>
                                     <div class="input-group has-validation">
-                                        @Html.TextBoxFor(model => model.customer.Membership.UserName, new { @class = "form-control" })
+                                        @Html.TextBoxFor(model => model.Customer.Membership.UserName, new { @class = "form-control" })
                                         <div>
                                             @if (Model != null && ViewData["UserName"] != null)
                                             {
-                                                @Html.ValidationMessageFor(model => model.customer.Membership.UserName, ViewData["UserName"].ToString(), new { @class = "text-danger" })
+                                                @Html.ValidationMessageFor(model => model.Customer.Membership.password, ViewData["UserName"].ToString(), new { @class = "text-danger" })
                                             }
                                             else
                                             {
-                                                @Html.ValidationMessageFor(model => model.customer.Membership.UserName, "", new { @class = "text-danger" })
+                                                @Html.ValidationMessageFor(model => model.Customer.Membership.password, "", new { @class = "text-danger" })
                                             }
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-12 val-Data">
                                     <label for="validationCustom03" class="form-label">Password</label>
-                                    @Html.TextBoxFor(model => model.customer.Membership.password, new { @class = "form-control", type = "password" })
+                                    @Html.TextBoxFor(model => model.Customer.Membership.password, new { @class = "form-control", type = "password" })
                                     <div>
                                         @if (Model != null && ViewData["Password"] != null)
                                         {
-                                            @Html.ValidationMessageFor(model => model.customer.Membership.password, ViewData["Password"].ToString(), new { @class = "text-danger" })
+                                            @Html.ValidationMessageFor(model => model.Customer.Membership.password, ViewData["Password"].ToString(), new { @class = "text-danger" })
                                         }
                                         else
                                         {
-                                            @Html.ValidationMessageFor(model => model.customer.Membership.password, "", new { @class = "text-danger" })
+                                            @Html.ValidationMessageFor(model => model.Customer.Membership.password, "", new { @class = "text-danger" })
                                         }
 
                                     </div>
                                 </div>
                                 <div class="col-md-12 val-Data">
                                     <label for="validationCustom04" class="form-label">Confirm Password</label>
-                                    @Html.TextBoxFor(model => model.customer.Membership.Confirmpassword, new { @class = "form-control", type = "text" })
+                                    @Html.TextBoxFor(model => model.Customer.Membership.Confirmpassword, new { @class = "form-control", type = "text" })
                                     <div>
                                         @if (Model != null && ViewData["Password"] != null)
                                         {
-                                            @Html.ValidationMessageFor(model => model.customer.Membership.password, ViewData["Password"].ToString(), new { @class = "text-danger" })
+                                            @Html.ValidationMessageFor(model => model.Customer.Membership.password, ViewData["Password"].ToString(), new { @class = "text-danger" })
                                         }
                                         else
                                         {
-                                            @Html.ValidationMessageFor(model => model.customer.Membership.password, "", new { @class = "text-danger" })
+                                            @Html.ValidationMessageFor(model => model.Customer.Membership.password, "", new { @class = "text-danger" })
                                         }
                                     </div>
                                 </div>
                                 <div class="col-md-12 val-Data">
                                     <div class="form-group">
                                         <label for="exampleFormControlFile1">Image</label>
-                                        <input type="file" name="file" id="files" class="zmdi zmdi-camera new-contact__upload" />
+                                        <input type="file" name="file" id="files" />
                                     </div>
                                 </div>
                                 <div class="col-md-12 val-Data">

@@ -41,11 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDashBoardManager.cs" />
     <Compile Include="CategoryManager.cs" />
     <Compile Include="CustomerManager.cs" />
     <Compile Include="ProductManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RoleManager.cs" />
     <Compile Include="SPCategoryManager.cs" />
     <Compile Include="SPProductManager.cs" />
   </ItemGroup>

@@ -3,7 +3,97 @@
 @{
     ViewBag.Title = "AdminDashboard";
     Layout = "~/Views/Shared/_DashBoardLayout.cshtml";
+    DateTime dateTime = DateTime.UtcNow.Date;
 }
+<div class="row">
+    <div class="col-lg-4 col-sm-6">
+        <div class="card gradient-1">
+            <div class="card-body">
+                <h3 class="card-title text-white">Total Product</h3>
+                <div class="d-inline-block">
+                    <h2 class="text-white">@Model.TotalProduct</h2>
+                    <p class="text-white mb-0">Jan -@dateTime.ToString("dd/MM/yyyy")</p>
+                </div>
+                <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+        <div class="card gradient-2">
+            <div class="card-body">
+                <h3 class="card-title text-white">Total Order</h3>
+                <div class="d-inline-block">
+                    <h2 class="text-white">@Model.TotalOrder</h2>
+                    <p class="text-white mb-0">Jan -@dateTime.ToString("dd/MM/yyyy")</p>
+                </div>
+                <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+        <div class="card gradient-3">
+            <div class="card-body">
+                <h3 class="card-title text-white">Total Customers</h3>
+                <div class="d-inline-block">
+                    <h2 class="text-white">@Model.TotalCustomer</h2>
+                    <p class="text-white mb-0">Jan -@dateTime.ToString("dd/MM/yyyy")</p>
+                </div>
+                <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="active-member">
+                    <div class="table-responsive">
+                        <table class="table table-xs mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Customers</th>
+                                    <th>Customer Name</th>
+                                    <th>Customer Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            @foreach (var customer in Model.customerlist)
+                            {
+                                <tr>
+                                    <td>
+                                        <img src="@customer.CustomerImage" class=" rounded-circle mr-3" alt="">
+                                    </td>
+                                    <td>
+                                        @customer.FullName
+                                    </td>
+                                    <td>
+                                        <span>@customer.Email</span>
+                                    </td>
+                                    @*<td>
+                                        <span>@customer.Membership.UserName</span>
+                                    </td>*@
+                                    @*<td>
+                                        <div>
+                                            <div class="progress" style="height: 6px">
+                                                <div class="progress-bar bg-success" style="width: 50%"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><i class="fa fa-circle-o text-success  mr-2"></i> Paid</td>
+                                    <td>
+                                        <span>Last Login</span>
+                                        <span class="m-0 pl-3">10 sec ago</span>
+                                    </td>*@
+                                </tr>
+                            }
 
-<h2>AdminDashboard</h2>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 

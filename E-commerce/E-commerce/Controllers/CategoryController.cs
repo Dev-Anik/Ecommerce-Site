@@ -36,6 +36,7 @@ namespace E_commerce.Controllers
                 AdminViewModel categorys = new AdminViewModel();
                 var categoryid= CategoryManager.AddNewCategory(category);
                 categorys.CategoryList = CategoryManager.GetAllCategory();
+                categorys.Category = new CategoryModel();
                 if (categoryid > 0) 
                 {
                    return View("AddCategory",categorys);

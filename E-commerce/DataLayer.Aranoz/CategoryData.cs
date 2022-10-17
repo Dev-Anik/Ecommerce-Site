@@ -37,6 +37,7 @@ namespace DataLayer.Aranoz
                     {
                         CategoryId = Convert.ToInt32(dr["CategoryId"]),
                         CategorName = dr["CategoryName"].ToString(),
+
                     });
                 }
 

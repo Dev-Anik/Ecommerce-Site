@@ -41,7 +41,11 @@ namespace E_commerce.Controllers
         }
         public ActionResult AdminDashboard()
         {
-            return View();
+            AdminViewModel admindashboard = new AdminViewModel();
+            admindashboard.TotalProduct = AdminDashBoardManager.TotalProduct();
+            admindashboard.TotalCustomer = AdminDashBoardManager.TotalCustomer();
+            admindashboard.customerlist = CustomerManager.GetAllCustomerList();
+            return View(admindashboard);
         }
         public ActionResult CustomerDashboard()
         {
@@ -49,10 +53,8 @@ namespace E_commerce.Controllers
         }
         public ActionResult AddNewCustomer()
         {
-
             AdminViewModel membership = new AdminViewModel();
-            var member = new AuthenticanProvider();
-            membership.customer = new CustomerInformation();
+            membership.Customer = new CustomerInformation();
             return View(membership);
         }
         [HttpPost]
@@ -61,13 +63,11 @@ namespace E_commerce.Controllers
             if (ModelState.IsValid)
             {
                 var member = new AuthenticanProvider();
-                if (customer.Membership.password != customer.Membership.Confirmpassword)
+                if (customer.Membership.password == customer.Membership.Confirmpassword)
                 {
-                    if (member.AddNewMembershipUser(customer.Membership))
+                    if (member.AddNewMembershipUser(customer))
                     {
                         Roles.AddUserToRole(customer.Membership.UserName, "Customer");
-                        var userkey = Membership.GetUser(customer.Membership.UserName).ProviderUserKey;
-                        customer.MembershipUserId = userkey.ToString();
                         var imageurl = Uploadimage(file);
                         customer.CustomerImage = imageurl;
                         CustomerManager.AddNewCustomer(customer);
@@ -76,7 +76,7 @@ namespace E_commerce.Controllers
                     else
                     {
                         AdminViewModel username = new AdminViewModel();
-                        username.customer = customer;
+                        username.Customer = customer;
                         ViewData["UserName"] = "User Name Already Existed !!";
                         return View(username);
                     }
@@ -84,8 +84,9 @@ namespace E_commerce.Controllers
                 }
                 else
                 {
+                   
                     AdminViewModel username = new AdminViewModel();
-                    username.customer = customer;
+                    username.Customer = customer;
                     ViewData["Password"] = "Password is not Matched !!!";
                     return View(username);
                 }

@@ -34,7 +34,6 @@ namespace DataLayerSQL
                 {
                     connection.Close();
                 }
-
                 return id;
             }
         }

@@ -9,37 +9,42 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
-            @using (Html.BeginForm("AddCategory", "Category", FormMethod.Post, new { }))
-            {
-                <h1> ADD NEW Category</h1>
-                <div>
-                    @Html.HiddenFor(Model => Model.Category.CategoryId)
-                    <div class="col-lg-6">
-                        <label>Category Name</label>
-                        <div class="form-group">
-                            @Html.EditorFor(Model => Model.Category.CategorName)
-                            @Html.ValidationMessageFor(Model => Model.Category.CategorName)
+            <center>
+                @using (Html.BeginForm("AddCategory", "Category", FormMethod.Post))
+                {
+                    <h1> ADD NEW Category</h1>
+                    <div>
+                        @Html.HiddenFor(Model => Model.Category.CategoryId)
+                        <div class="col-lg-6">
+                            <label>Category Name</label>
+                            <div class="form-group">
+                                @Html.TextBoxFor(Model => Model.Category.CategorName, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(Model => Model.Category.CategorName)
+                            </div>
                         </div>
+                        @if (Model.Category != null && Model.Category.CategoryId >0)
+                        {
+                            <center>
+                                <div class="form-group row">
+                                    <div class="col-lg-8 add-btn">
+                                        <input type="submit" value="Update" class="btn btn-light"/>
+                                    </div>
+                                </div>
+                            </center>
+                        }
+                        else
+                        {
+                            <center>
+                                <div class="form-group row">
+                                    <div class="col-lg-8 add-btn">
+                                        <input type="submit" value="Add" class="btn btn-light"/>
+                                    </div>
+                                </div>
+                            </center>
+                        }
                     </div>
-                    @if (Model.Category == null)
-                    {
-                        <div class="form-group row">
-                            <div class="col-lg-8 ml-auto">
-                                <input type="submit" value="Update" class="btn btn-light" />
-                            </div>
-                        </div>
-
-                    }
-                    else
-                    {
-                        <div class="form-group row">
-                            <div class="col-lg-8 ml-auto">
-                                <input type="submit"  value="Add" class="btn btn-light" />
-                            </div>
-                        </div>
-                    }
-                </div>
-            }
+                }
+            </center>
         </div>
     </div>
 </div>
@@ -76,18 +81,17 @@
                                 i++;
                             }
                         </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>No</th>
-                                <th>Category Name</th>
-                                <th>Delete</th>
-                                <th>Update</th>
-                            </tr>
-                        </tfoot>
                     </table>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+<style>
+    input.btn.btn-light {
+        padding: 8px 50px;
+        background-color: slategrey;
+        color: #fff;
+        margin-left: 95%;
+    }
+</style>

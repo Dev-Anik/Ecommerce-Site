@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDashboardSQLProvider.cs" />
     <Compile Include="CategorySQLProvider.cs" />
     <Compile Include="CustomerSqlProvider.cs" />
     <Compile Include="ProductSQLProvider.cs" />

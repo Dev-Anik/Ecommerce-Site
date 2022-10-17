@@ -1,8 +1,12 @@
 ﻿using System;
-using System.Web;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.EnterpriseServices;
+using System.Linq;
+using System.Security.Claims;
+using System.Web;
+using System.Web.Configuration;
 using System.Web.Security;
 using Aranoz.Model;
 using Aranoz.Model.Model;
@@ -28,21 +32,20 @@ namespace E_commerce.AuthControl
                 added = false;
                 throw new Exception("Message" + ex);
             }
-
             return added;
         }
 
-        public bool AddNewMembershipUser(MembershipModel membershipmodel)
+        public bool AddNewMembershipUser(CustomerInformation membershipmodel)
         {
             bool added = true;
-            var check = Roles.IsUserInRole(membershipmodel.UserName, "Customer");
+            var check = Roles.IsUserInRole(membershipmodel.Membership.UserName, "Customer");
             try
             {
 
                 if (membershipmodel != null && check == false)
                 {
-                    var membershipitem = Membership.CreateUser(membershipmodel.UserName, membershipmodel.password,
-                        membershipmodel.Email);
+                    var membershipitem = Membership.CreateUser(membershipmodel.Membership.UserName, membershipmodel.Membership.password,
+                        membershipmodel.Membership.Email);
                 }
                 else
                 {
@@ -68,7 +71,6 @@ namespace E_commerce.AuthControl
                 role.RoleName = item;
                 rolelist.Add(role);
             }
-
             return rolelist;
         }
     }

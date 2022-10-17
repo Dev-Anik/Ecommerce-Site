@@ -99,7 +99,6 @@ namespace DataLayerSQL
                 catch (Exception ex)
                 {
                     updated = false;
-                    return updated;
                     throw new Exception("Exception Adding Data. " + ex.Message);
                    
                 }
@@ -127,7 +126,6 @@ namespace DataLayerSQL
                 catch (Exception ex)
                 {
                     deleted = false;
-                    return deleted;
                     throw new Exception("Message" + ex);
                  
                 }

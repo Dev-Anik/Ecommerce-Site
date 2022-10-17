@@ -8,13 +8,13 @@
 <center>
     <h1> ADD New Role</h1>
     <div>
-        @using (Html.BeginForm("AddNewRole", "Auth", FormMethod.Post, new { }))
+        @using (Html.BeginForm("AddNewRole", "Auth", FormMethod.Post))
         {
             @Html.HiddenFor(Model => Model.role.RoleId)
             <div class="col-lg-6">
                 <label>Category Name</label>
                 <div class="form-group">
-                    @Html.TextBoxFor(Model => Model.role.RoleName, new { @class = "form-control", type = "Email" })
+                    @Html.TextBoxFor(Model => Model.role.RoleName, new { @class = "form-control" })
                     @Html.ValidationMessageFor(Model => Model.role.RoleName)
                 </div>
             </div>

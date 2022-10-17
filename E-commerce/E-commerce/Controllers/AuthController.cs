@@ -20,6 +20,7 @@ namespace E_commerce.Controllers
             AdminViewModel membership = new AdminViewModel();
             var roles = new AuthenticanProvider();
             membership.rolelist = roles.GetAllRoleList();
+            membership.role = new RoleModel();
             return View(membership);
         }
         [HttpPost]

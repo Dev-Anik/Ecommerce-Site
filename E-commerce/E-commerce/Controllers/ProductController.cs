@@ -90,7 +90,6 @@ namespace E_commerce.Controllers
             product.ProductSearchList = ProductManager.SeachByCategoryProduct(id);
             product.CategoryList = CategoryManager.GetAllCategory();
             return View("GetAllProduct", product);
-
         }
     }
 }
